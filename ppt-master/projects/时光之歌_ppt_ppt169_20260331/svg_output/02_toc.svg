@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+    <!-- 诗歌目录页 - 基于McKinsey风格定制 -->
+    
+    <defs>
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#005587"/>
+            <stop offset="100%" stop-color="#0076A8"/>
+        </linearGradient>
+        
+        <!-- 诗歌主题渐变 -->
+        <linearGradient id="poemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#005587"/>
+            <stop offset="50%" stop-color="#2196F3"/>
+            <stop offset="100%" stop-color="#4CAF50"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- 浅灰色背景 -->
+    <rect width="1280" height="720" fill="#F5F5F5"/>
+    
+    <!-- 顶部装饰条 -->
+    <rect x="0" y="0" width="1280" height="6" fill="url(#poemGrad)"/>
+    
+    <!-- 页面标题区 -->
+    <text x="60" y="75" font-family="Microsoft YaHei, Arial" font-size="16" font-weight="bold" fill="#005587" letter-spacing="3">诗歌赏析目录</text>
+    
+    <!-- 主标题 -->
+    <g transform="translate(60, 115)">
+        <text font-family="Microsoft YaHei, KaiTi, Arial" font-size="48" font-weight="bold" fill="#333333">
+            <tspan x="0" dy="0">《时光之歌》</tspan>
+            <tspan x="0" dy="60">结构解析</tspan>
+        </text>
+        
+        <!-- 标题装饰线 -->
+        <line x1="0" y1="85" x2="120" y2="85" stroke="#005587" stroke-width="4"/>
+        <line x1="125" y1="85" x2="180" y2="85" stroke="#2196F3" stroke-width="3"/>
+        <line x1="185" y1="85" x2="220" y2="85" stroke="#4CAF50" stroke-width="2"/>
+    </g>
+    
+    <!-- 左侧装饰 -->
+    <rect x="30" y="140" width="4" height="450" fill="#005587" fill-opacity="0.5"/>
+    
+    <!-- 诗歌结构卡片 -->
+    
+    <!-- 第1部分：诗歌介绍 -->
+    <g>
+        <rect x="60" y="170" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="60" y="170" width="6" height="100" fill="#005587" rx="3"/>
+        <rect x="80" y="190" width="60" height="60" fill="#005587" fill-opacity="0.08" rx="4"/>
+        <text x="110" y="230" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#005587">01</text>
+        <text x="165" y="210" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">诗歌简介与主题</text>
+        <text x="165" y="240" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">18行现代诗歌，6个主题部分</text>
+    </g>
+    
+    <!-- 第2部分：时光流逝 -->
+    <g>
+        <rect x="660" y="170" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="660" y="170" width="6" height="100" fill="#2196F3" rx="3"/>
+        <rect x="680" y="190" width="60" height="60" fill="#2196F3" fill-opacity="0.08" rx="4"/>
+        <text x="710" y="230" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#2196F3">02</text>
+        <text x="765" y="210" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">时光如水匆匆过</text>
+        <text x="765" y="240" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">第1-4行：水流、织机意象</text>
+    </g>
+    
+    <!-- 第3部分：日夜更替 -->
+    <g>
+        <rect x="60" y="290" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="60" y="290" width="6" height="100" fill="#0076A8" rx="3"/>
+        <rect x="80" y="310" width="60" height="60" fill="#0076A8" fill-opacity="0.08" rx="4"/>
+        <text x="110" y="350" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#0076A8">03</text>
+        <text x="165" y="330" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">日夜交替的韵律</text>
+        <text x="165" y="360" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">第5-8行：昼夜、四季循环</text>
+    </g>
+    
+    <!-- 第4部分：人生阶段 -->
+    <g>
+        <rect x="660" y="290" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="660" y="290" width="6" height="100" fill="#4CAF50" rx="3"/>
+        <rect x="680" y="310" width="60" height="60" fill="#4CAF50" fill-opacity="0.08" rx="4"/>
+        <text x="710" y="350" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#4CAF50">04</text>
+        <text x="765" y="330" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">人生的不同阶段</text>
+        <text x="765" y="360" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">第9-12行：少年至老年历程</text>
+    </g>
+    
+    <!-- 第5部分：历史文明 -->
+    <g>
+        <rect x="60" y="410" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="60" y="410" width="6" height="100" fill="#005587" rx="3"/>
+        <rect x="80" y="430" width="60" height="60" fill="#005587" fill-opacity="0.08" rx="4"/>
+        <text x="110" y="470" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#005587">05</text>
+        <text x="165" y="450" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">历史长河中的文明</text>
+        <text x="165" y="480" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">第13-16行：宏观时间尺度</text>
+    </g>
+    
+    <!-- 第6部分：人生感悟 -->
+    <g>
+        <rect x="660" y="410" width="560" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="660" y="410" width="6" height="100" fill="#2196F3" rx="3"/>
+        <rect x="680" y="430" width="60" height="60" fill="#2196F3" fill-opacity="0.08" rx="4"/>
+        <text x="710" y="470" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="bold" fill="#2196F3">06</text>
+        <text x="765" y="450" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="bold" fill="#333333">珍惜当下的智慧</text>
+        <text x="765" y="480" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">第17-20行：行动与感恩</text>
+    </g>
+    
+    <!-- 第7部分：总结升华 -->
+    <g>
+        <rect x="60" y="530" width="1160" height="80" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.5" rx="6"/>
+        <rect x="60" y="530" width="6" height="80" fill="url(#poemGrad)" rx="3"/>
+        <rect x="80" y="550" width="60" height="40" fill="#005587" fill-opacity="0.08" rx="4"/>
+        <text x="110" y="580" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="24" font-weight="bold" fill="#005587">总</text>
+        <text x="165" y="565" font-family="Microsoft YaHei, Arial" font-size="20" font-weight="bold" fill="#333333">总结：诗歌的五维哲学观</text>
+        <text x="165" y="595" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">时间观、生命观、历史观、价值观、人生观</text>
+    </g>
+    
+    <!-- 底部信息栏 -->
+    <rect x="60" y="630" width="1160" height="40" fill="#FFFFFF" fill-opacity="0.7" rx="4"/>
+    
+    <!-- 核心信息 -->
+    <g transform="translate(80, 655)">
+        <text font-family="Microsoft YaHei, Arial" font-size="14" font-weight="bold" fill="#005587">✨ 核心主旨：</text>
+        <text x="120" dy="0" font-family="Microsoft YaHei, Arial" font-size="14" fill="#666666">通过诗歌探讨时间、生命与人生意义，传达珍惜当下的智慧</text>
+    </g>
+    
+    <!-- 页脚 -->
+    <line x1="60" y1="685" x2="1220" y2="685" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="60" y="705" font-family="Microsoft YaHei, Arial" font-size="14" fill="#999999">第 2 / 10 页</text>
+    
+    <!-- 诗歌标识 -->
+    <text x="1220" y="705" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="12" fill="#999999" letter-spacing="1">
+        诗歌结构 · 时光之歌
+    </text>
+    
+</svg>

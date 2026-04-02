@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+    <!-- 诗歌封面页 - 基于McKinsey风格定制 -->
+    
+    <defs>
+        <!-- 顶部渐变条 -->
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#005587"/>
+            <stop offset="100%" stop-color="#0076A8"/>
+        </linearGradient>
+        <!-- 装饰渐变 -->
+        <linearGradient id="decoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#005587" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#0076A8" stop-opacity="0.04"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- 深蓝色纯色背景 -->
+    <rect width="1280" height="720" fill="#005587"/>
+    
+    <!-- 装饰光晕效果 -->
+    <ellipse cx="900" cy="180" rx="300" ry="120" fill="#FFFFFF" fill-opacity="0.03"/>
+    <ellipse cx="400" cy="500" rx="250" ry="100" fill="#2196F3" fill-opacity="0.05"/>
+    
+    <!-- 装饰圆点图案 -->
+    <circle cx="200" cy="200" r="8" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="1100" cy="150" r="6" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="150" cy="500" r="5" fill="#2196F3" fill-opacity="0.1"/>
+    <circle cx="1000" cy="600" r="7" fill="#2196F3" fill-opacity="0.1"/>
+    
+    <!-- 装饰时间流线 -->
+    <path d="M 100,100 C 200,120 300,80 400,100" fill="none" stroke="#2196F3" stroke-width="2" stroke-opacity="0.2"/>
+    <path d="M 800,80 C 900,100 1000,60 1100,80" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.15"/>
+    
+    <!-- 主标题区域 -->
+    <g transform="translate(60, 280)">
+        <!-- 标题装饰线 -->
+        <rect x="0" y="-40" width="80" height="4" fill="#F5A623"/>
+        <rect x="0" y="-32" width="50" height="2" fill="#2196F3"/>
+        
+        <!-- 主标题 -->
+        <text font-family="Microsoft YaHei, KaiTi, Arial" font-size="72" font-weight="bold" fill="#FFFFFF" letter-spacing="2">
+            <tspan x="0" dy="0">时</tspan>
+            <tspan x="80" dy="0">光</tspan>
+            <tspan x="160" dy="0">之</tspan>
+            <tspan x="240" dy="0">歌</tspan>
+        </text>
+        
+        <!-- 副标题装饰线 -->
+        <line x1="0" y1="70" x2="120" y2="70" stroke="#F5A623" stroke-width="3"/>
+        <line x1="0" y1="76" x2="80" y2="76" stroke="#2196F3" stroke-width="2" stroke-opacity="0.7"/>
+        
+        <!-- 副标题 -->
+        <text x="0" y="130" font-family="Microsoft YaHei, KaiTi, Arial" font-size="28" fill="#FFFFFF" fill-opacity="0.9">
+            <tspan x="0" dy="0">一首关于时间、生命与人生的哲理诗歌</tspan>
+        </text>
+    </g>
+    
+    <!-- 作者信息区 -->
+    <g transform="translate(60, 520)">
+        <!-- 信息卡片 -->
+        <rect width="400" height="120" fill="#FFFFFF" fill-opacity="0.1" rx="8"/>
+        <rect width="4" height="120" fill="#F5A623"/>
+        
+        <!-- 信息内容 -->
+        <text x="24" y="40" font-family="Microsoft YaHei, Arial" font-size="14" fill="#FFFFFF" fill-opacity="0.8">作品信息</text>
+        <text x="24" y="65" font-family="Microsoft YaHei, Arial" font-size="18" font-weight="bold" fill="#FFFFFF">《时光之歌》诗歌赏析</text>
+        
+        <text x="24" y="95" font-family="Microsoft YaHei, Arial" font-size="14" fill="#FFFFFF" fill-opacity="0.8">创作时间</text>
+        <text x="24" y="115" font-family="Microsoft YaHei, Arial" font-size="16" fill="#FFFFFF">2026年3月</text>
+    </g>
+    
+    <!-- 右下角装饰 -->
+    <g transform="translate(1000, 500)">
+        <!-- 时间图标装饰 -->
+        <rect width="120" height="80" fill="#FFFFFF" fill-opacity="0.05" rx="4"/>
+        
+        <!-- 模拟时钟装饰 -->
+        <circle cx="60" cy="40" r="25" fill="none" stroke="#2196F3" stroke-width="2" stroke-opacity="0.3"/>
+        <line x1="60" y1="40" x2="60" y2="25" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.5"/>
+        <line x1="60" y1="40" x2="70" y2="40" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.5"/>
+    </g>
+    
+    <!-- 底部装饰 -->
+    <rect x="0" y="680" width="1280" height="40" fill="#003A5C"/>
+    
+    <!-- 页码 -->
+    <text x="60" y="705" font-family="Microsoft YaHei, Arial" font-size="14" fill="#FFFFFF" fill-opacity="0.7">第 1 / 10 页</text>
+    
+    <!-- 诗歌标识 -->
+    <text x="1220" y="705" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="12" fill="#FFFFFF" fill-opacity="0.5" letter-spacing="1">
+        诗歌赏析 · 时光之歌
+    </text>
+    
+</svg>

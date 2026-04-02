@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <clipPath id="endClip">
+      <rect width="1280" height="720"/>
+    </clipPath>
+  </defs>
+  
+  <image href="assets/image14.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  
+  <rect x="0" y="0" width="1280" height="720" fill="#1F497D" opacity="0.4"/>
+  
+  <text x="640" y="280" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="56" font-weight="bold" text-anchor="middle">
+    {{THANK_YOU_TEXT}}
+  </text>
+  
+  <text x="640" y="340" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="24" text-anchor="middle" opacity="0.9">
+    {{ORGANIZATION}}
+  </text>
+  
+  <text x="640" y="380" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" text-anchor="middle" opacity="0.7">
+    {{DATE}}
+  </text>
+  
+  <g transform="translate(400, 500)">
+    <image href="assets/image4.png" x="0" y="0" width="200" height="70" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/image5.png" x="280" y="0" width="200" height="70" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+</svg>
