@@ -142,49 +142,7 @@ if all_tables:
 
 ### reportlab - Create PDFs
 
-#### Chinese Font Support (IMPORTANT - 中文支持)
-
-**默认字体不支持中文！** 必须先注册中文字体，否则中文会显示为黑点或方块。
-
-```python
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-
-# Windows 系统字体路径
-pdfmetrics.registerFont(TTFont('SimHei', 'C:/Windows/Fonts/simhei.ttf'))      # 黑体
-pdfmetrics.registerFont(TTFont('SimSun', 'C:/Windows/Fonts/simsun.ttc'))      # 宋体
-pdfmetrics.registerFont(TTFont('MicrosoftYaHei', 'C:/Windows/Fonts/msyh.ttc')) # 微软雅黑
-
-# Linux 系统字体路径
-# pdfmetrics.registerFont(TTFont('WenQuanYi', '/usr/share/fonts/truetype/wqy/wqy-microhei.ttc'))
-
-# macOS 系统字体路径
-# pdfmetrics.registerFont(TTFont('STHeiti', '/System/Library/Fonts/STHeiti Light.ttc'))
-```
-
-#### Create PDF with Chinese Text (Canvas方式)
-
-```python
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-
-# 注册中文字体
-pdfmetrics.registerFont(TTFont('SimHei', 'C:/Windows/Fonts/simhei.ttf'))
-
-c = canvas.Canvas("chinese.pdf", pagesize=letter)
-width, height = letter
-
-# 使用中文字体
-c.setFont("SimHei", 16)
-c.drawCentredString(width/2, height - 100, "中文标题测试")
-c.drawCentredString(width/2, height - 130, "中国核动力研究设计院")
-
-c.save()
-```
-
-#### Create PDF with Chinese Text (Platypus方式 - 推荐)
+#### Create PDF with Chinese Text
 
 ```python
 from reportlab.lib.pagesizes import letter
@@ -445,8 +403,8 @@ with open("encrypted.pdf", "wb") as output:
 | Split PDFs | pypdf | One page per file |
 | Extract text | pdfplumber | `page.extract_text()` |
 | Extract tables | pdfplumber | `page.extract_tables()` |
-| Create PDFs | reportlab | Canvas or Platypus |
-| **Create Chinese PDFs** | reportlab | **Register Chinese font first** |
+| Create PDFs | reportlab | Platypus |
+| Create Chinese PDFs | reportlab | Register Chinese font first |
 | Command line merge | qpdf | `qpdf --empty --pages ...` |
 | OCR scanned PDFs | pytesseract | Convert to image first |
 | Fill PDF forms | pdf-lib or pypdf (see FORMS.md) | See FORMS.md |
