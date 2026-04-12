@@ -42,7 +42,13 @@ As a top-tier AI presentation strategist, receive source documents, perform cont
 
 ## 1. Eight Confirmations Process
 
-⛔ **BLOCKING**: Before starting analysis, reference `templates/design_spec_reference.md` and provide professional recommendations for the following eight items, then **present them as a bundled package to the user and wait for explicit confirmation or modifications**.
+🚧 **GATE — Mandatory read before proceeding**: Before starting analysis or writing any part of the Design Specification, you **MUST** `read_file` the reference template:
+```
+read_file templates/design_spec_reference.md
+```
+The design_spec.md output **MUST** follow this template's structure exactly (Sections I through XI). After writing, perform a section-by-section self-check: I Project Information ✓ → II Canvas Spec ✓ → III Visual Theme ✓ → IV Typography ✓ → V Layout Principles ✓ → VI Icon Usage ✓ → VII Visualization Reference List ✓ → VIII Image Resource List ✓ → IX Content Outline ✓ → X Speaker Notes Requirements ✓ → XI Technical Constraints Reminder ✓. Any missing section must be completed before outputting the file.
+
+⛔ **BLOCKING**: After completing the read above, provide professional recommendations for the following eight items, then **present them as a bundled package to the user and wait for explicit confirmation or modifications**.
 
 > **Execution discipline**: This is the last BLOCKING checkpoint in the pipeline (besides template selection). Once the user confirms, the AI must automatically complete the Design Specification & Content Outline and seamlessly proceed to subsequent image generation (if applicable), SVG generation, and post-processing — no additional questions or pauses in between.
 
@@ -104,15 +110,27 @@ Proactively provide a color scheme (HEX values) based on content characteristics
 | **C** | Built-in icon library | Professional scenarios (recommended) |
 | **D** | Custom icons | Has brand assets |
 
-Built-in library contains 640+ icons; see `templates/icons/README.md`.
+Built-in library contains 7000+ icons across three libraries:
+
+| Library | Style | Count | Prefix | When to use |
+|---------|-------|-------|--------|-------------|
+| `chunk` | fill · straight-line geometry (sharp corners, rectilinear) | 640 | `chunk/` | ✅ **Default** — most scenarios |
+| `tabler-filled` | fill · bezier-curve forms (smooth, rounded contours) | 1000+ | `tabler-filled/` | When design calls for smooth, rounded, organic icon forms |
+| `tabler-outline` | stroke/line | 5000+ | `tabler-outline/` | Screen-only decks needing a light, elegant aesthetic |
 
 > **Mandatory rules when choosing C**:
-> 1. Consult `templates/icons/icons_index.json` to verify icon existence
-> 2. Icon names are single names (e.g., `factory`), no path prefixes
-> 3. Using names not in the index is FORBIDDEN
-> 4. List the final icon inventory in the Design Spec; Executor may only use icons from this list
+> 1. **Lock icon library first** — default to `chunk`; switch to `tabler-filled` only when the design calls for smooth, rounded, organic icon forms; use `tabler-outline` only for screen-only light aesthetic decks:
+>    - **Sharp, rectilinear geometry** (default): use `chunk` — all paths use straight-line commands only (M/L/H/V/Z)
+>    - **Smooth, rounded forms**: use `tabler-filled` — all contours built with bezier curves and arcs (C/A)
+>    - **Outline/Stroke style** (screen-only, light aesthetic): use `tabler-outline`
+>    - **Outline/Stroke style** (screen-only, light aesthetic): use `tabler-outline`
+>    - ⚠️ **One presentation = one library.** Mixing icons from different libraries is FORBIDDEN. If a chosen library lacks an exact icon, find the closest alternative **within that same library**.
+> 2. Search for icon availability: `ls skills/ppt-master/templates/icons/<chosen-library>/ | grep <keyword>`
+> 3. Use the verified filename (without `.svg`) as the icon name
+> 4. Always include the library prefix (e.g., `chunk/home` or `tabler-filled/home`)
+> 5. List the final icon inventory and chosen library in the Design Spec; Executor may only use icons from this list
 >
-> **Quick lookup**: By category → `icons_index.json` `categories`; by semantics → `quickLookup`; full list → `templates/icons/FULL_INDEX.md`
+> **Do NOT preload any index file** — use `ls | grep` to search on demand with zero token cost.
 
 ### g. Typography Plan Confirmation (Font + Size)
 
@@ -190,25 +208,24 @@ Core logic: The layout container's aspect ratio must closely match the image's o
 
 > **Pipeline handoff**: When C) AI generation is selected, after outputting the design spec, prompt the user to invoke Image_Generator. Once images are collected in `images/`, proceed to Executor.
 
-### Chart Reference (Non-blocking — Strategist recommends, no user confirmation needed)
+### Visualization Reference (Non-blocking — Strategist recommends, no user confirmation needed)
 
-When content outline pages involve **data visualization** (comparisons, trends, proportions, KPIs, flows, strategic frameworks, etc.), consult the chart template library to select appropriate chart types.
+When content outline pages involve **data visualization or infographic-style structured information design** (comparisons, trends, proportions, KPIs, flows, timelines, org structures, strategic frameworks, etc.), Strategist should select appropriate visualization types from the built-in template library.
 
-Built-in library contains 33 chart templates; see `templates/charts/charts_index.json`.
+> **Mandatory first step**: At the beginning of content planning, **read the full `templates/charts/charts_index.json`** file. This index contains all available visualization templates (52 types across 8 categories), including each template's `summary`, `bestFor`, `avoidFor`, and `keywords`. Strategist must internalize the full catalog before making selections — do NOT rely on memory or partial lists.
 
 > **Selection workflow**:
-> 1. Identify pages that need data visualization during content planning
-> 2. Consult `charts_index.json` — by analysis goal → `quickLookup`; by category → `categories`
-> 3. Review `bestFor` / `avoidFor` to confirm the chart type fits the data characteristics
-> 4. List all selected charts in Design Spec **section VII (Chart Reference List)** as a centralized reference; in section IX Content Outline, each page only needs to note the chart type name
+> 1. Read and internalize the complete `templates/charts/charts_index.json`
+> 2. For each page in the content outline, determine whether it needs visualization based on its information structure
+> 3. Match page content against the `bestFor` / `avoidFor` / `keywords` fields across all 52 templates to find the best fit
+> 4. Use `quickLookup` as a secondary cross-reference when multiple candidates seem suitable
+> 5. List all selected visualizations in Design Spec **section VII (Visualization Reference List)** as a centralized reference; in section IX Content Outline, each page only needs to note the visualization type name
 >
-> **Quick lookup by goal**:
-> - Ranking/comparison → `bar_chart`, `horizontal_bar_chart`, `grouped_bar_chart`
-> - Trends over time → `line_chart`, `area_chart`, `dual_axis_line_chart`
-> - Proportions → `donut_chart`, `pie_chart`, `treemap_chart`
-> - KPIs/targets → `kpi_cards`, `bullet_chart`, `gauge_chart`
-> - Conversion/flow → `funnel_chart`, `sankey_chart`, `waterfall_chart`
-> - Strategy → `swot_analysis`, `porter_five_forces`, `matrix_2x2`
+> **Rules**:
+> - Strategist is responsible for **semantic selection** (which type fits the content), not detailed SVG styling
+> - One page may use at most one primary visualization type; complex pages may combine a chart with a supporting layout
+> - Prefer specificity: if `vertical_list` fits better than generic `numbered_steps`, choose the more specific template
+> - When no built-in template fits, note "custom layout" instead of forcing a poor match
 
 ### Speaker Notes Requirements (Default — no discussion needed)
 
@@ -341,9 +358,9 @@ The Strategist should make professional judgments on the template basis generate
 | IV. Typography System | Font plan (P1-P5), font size hierarchy (H1-Code, 7 levels) |
 | V. Layout Principles | Page structure (header/content/footer zones), 6 layout modes, spacing spec |
 | VI. Icon Usage Spec | Source description, placeholder syntax, recommended icon list |
-| VII. Chart Reference List | Chart type, reference template path, used-in pages, purpose |
+| VII. Visualization Reference List | Visualization type, reference template path, used-in pages, purpose |
 | VIII. Image Resource List | Filename, dimensions, ratio, purpose, status, generation description |
-| IX. Content Outline | Grouped by chapter; each page includes layout, title, content points, chart type (if applicable) |
+| IX. Content Outline | Grouped by chapter; each page includes layout, title, content points, visualization type (if applicable) |
 | X. Speaker Notes Requirements | File naming rules, content structure description |
 | XI. Technical Constraints Reminder | SVG generation rules, PPT compatibility rules |
 | XII. Design Checklist | Pre-generation / post-generation check items |

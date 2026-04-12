@@ -66,35 +66,88 @@ File naming format: `<number>_<page_name>.svg`
 
 ## 4. Icon Usage
 
-Four approaches: **A: Emoji** (`<text>🚀</text>`) | **B: AI-generated** (SVG basic shapes) | **C: Built-in library** (`templates/icons/` 640+ icons, recommended) | **D: Custom** (user-specified)
+Four approaches: **A: Emoji** (`<text>🚀</text>`) | **B: AI-generated** (SVG basic shapes) | **C: Built-in library** (`templates/icons/` 6000+ icons, recommended) | **D: Custom** (user-specified)
 
 **Built-in icons — Placeholder method (recommended)**:
 
 ```xml
-<use data-icon="chart-bar" x="100" y="200" width="48" height="48" fill="#005587"/>
+<!-- chunk (default — straight-line geometry, sharp corners, structured) -->
+<use data-icon="chunk/home" x="100" y="200" width="48" height="48" fill="#005587"/>
+
+<!-- tabler-filled (bezier-curve forms, smooth & rounded contours) -->
+<use data-icon="tabler-filled/home" x="100" y="200" width="48" height="48" fill="#005587"/>
+
+<!-- tabler-outline (light, line-art style — screen-only decks) -->
+<use data-icon="tabler-outline/home" x="100" y="200" width="48" height="48" fill="#005587"/>
 ```
 
 > No need to manually run `embed_icons.py`; `finalize_svg.py` post-processing tool will auto-embed icons.
 
-**Common icons**: `chart-bar` `arrow-trend-up` `users` `cog` `circle-checkmark` `target` `clock` `file` `dollar` `lightbulb`
+**Three icon libraries**:
 
-> ⚠️ **Icon validation rule**: If the Design Specification includes an icon inventory list, Executor may **only** use icons from that approved list. Using icon names not in the index is FORBIDDEN — verify against `templates/icons/icons_index.json` if uncertain.
+| Library | Style | Count | Prefix | When to use |
+|---------|-------|-------|--------|-------------|
+| `chunk` | fill · straight-line geometry (sharp corners, rectilinear) | 640 | `chunk/` | ✅ **Default** — most scenarios |
+| `tabler-filled` | fill · bezier-curve forms (smooth, rounded contours) | 1000+ | `tabler-filled/` | When design calls for smooth, rounded, organic icon forms |
+| `tabler-outline` | stroke/line | 5000+ | `tabler-outline/` | Screen-only decks needing a light, elegant aesthetic |
 
-Full index: `templates/icons/README.md`
+> ⚠️ **One presentation = one library.** Never mix icons from different libraries. If the chosen library lacks an exact icon, find the closest available alternative **within that same library** — do not cross into another library to fill the gap.
+
+**Searching for icons** — use terminal, zero token cost:
+```bash
+ls skills/ppt-master/templates/icons/chunk/ | grep home
+ls skills/ppt-master/templates/icons/tabler-filled/ | grep home
+ls skills/ppt-master/templates/icons/tabler-outline/ | grep chart
+```
+
+**Abstract concept → icon name** (names for `chunk`; tabler libraries use their own equivalents — verify with `ls | grep`):
+
+| Concept | chunk | tabler-filled / tabler-outline |
+|---------|-------|-------------------------------|
+| Growth / Increase | `arrow-trend-up` | same |
+| Decline / Decrease | `arrow-trend-down` | same |
+| Success / Complete | `circle-checkmark` | `circle-check` |
+| Warning / Risk | `triangle-exclamation` | `alert-triangle` |
+| Innovation / Idea | `lightbulb` | `bulb` |
+| Strategy / Goal | `target` | same |
+| Efficiency / Speed | `bolt` | same |
+| Collaboration / Team | `users` | same |
+| Settings / Config | `cog` | `settings` |
+| Security / Trust | `shield` | same |
+| Money / Finance | `dollar` | `currency-dollar` |
+| Time / Deadline | `clock` | same |
+| Location / Region | `map-pin` | same |
+| Communication | `comment` | `message` |
+| Analysis / Data | `chart-bar` | same |
+| Process / Flow | `arrows-rotate-clockwise` | `refresh` |
+| Global / World | `globe` | `world` |
+| Excellence / Award | `star` | same |
+| Expand / Scale | `maximize` | same |
+| Problem / Issue | `bug` | same |
+
+> For self-evident names (home, user, file, search, arrow, etc.) — just `grep chunk/` directly without consulting the table.
+
+> ⚠️ **Icon validation rule**: If the Design Specification includes an icon inventory list, Executor may **only** use icons from that approved list. Before using any icon, verify it exists via `ls | grep` search. **Mixing icons from different libraries in the same presentation is FORBIDDEN** — use only the library specified in the Design Spec.
 
 ---
 
-## 5. Chart Reference
+## 5. Visualization Reference
 
-When the Design Spec includes a **VII. Chart Reference List**, read the referenced SVG templates from `templates/charts/` to understand common chart patterns.
+When the Design Spec includes a **VII. Visualization Reference List**, read the referenced SVG templates from `templates/charts/` before drawing pages that use those visualization types. The path remains `templates/charts/` for backward compatibility.
+
+🚧 **GATE — Mandatory read before first use**: When Executor encounters a visualization type listed in Section VII of the Design Spec for the first time, Executor **MUST** `read_file templates/charts/<chart_name>.svg` **before** generating that page. Extract the layout coordinates, card structure, spacing rhythm, and visual logic from the template as **creative reference and inspiration** — not as a strict copy. Then design the page independently using the project's own color scheme, typography, and content.
+
+> **Workflow**: read template SVG → understand structure & spacing → design original SVG informed by the reference → do NOT replicate the template verbatim.
+> **Reuse**: Once a visualization type has been read and understood, there is no need to re-read for subsequent pages of the same type.
+> **Change**: Read the new template when the visualization type changes or the structure needs re-reference.
 
 **Adaptation rules**:
-- **Must preserve**: Chart type (bar/line/pie etc.) as specified in the Design Spec
+- **Must preserve**: Visualization type (bar/line/pie/timeline/process/framework etc.) as specified in the Design Spec
 - **Must adapt**: Data values, labels, colors (match the project's color scheme), and dimensions to fit the page layout
-- **May adjust**: Axis ranges, grid lines, legend position, spacing — as long as the chart remains accurate and readable
-- **Must NOT**: Change chart type without Design Spec justification, or remove data points specified in the outline
+- **May adjust freely**: Visual composition, axis ranges, grid lines, legend position, spacing, decorative elements — creative freedom is encouraged as long as the chart remains accurate and readable
+- **Must NOT**: Change visualization type without Design Spec justification, or omit data points / structural elements specified in the outline
 
-> Chart templates: `templates/charts/` (33 types). Index: `templates/charts/charts_index.json`
+> Visualization templates: `templates/charts/` (52 types). Index: `templates/charts/charts_index.json`
 
 ---
 

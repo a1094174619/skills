@@ -13,6 +13,20 @@
         "enabled": true,
         "category": "skill"
     },
+    "humanize-ai-text": {
+        "name": "humanize-ai-text",
+        "description": "Humanize AI-generated text to bypass detection. This humanizer rewrites ChatGPT, Claude, and GPT content to sound natural and pass AI detectors like GPTZero, Turnitin, and Originality.ai. Based on Wikipedia's comprehensive \"Signs of AI Writing\" guide. Makes robotic AI writing undetectable and human-like.",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
+    "official-document-writing": {
+        "name": "official-document-writing",
+        "description": "专业的党政机关公文写作指南。当用户需要撰写、修改或审核党政机关公文（如请示、通知、函、总结、纪要等）时使用。提供GB/T 9704-2012格式规范指导、常用公文模板、语言规范建议和公文质量检查。",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
     "pdf": {
         "name": "pdf",
         "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",

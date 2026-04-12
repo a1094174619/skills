@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
   <rect width="1280" height="720" fill="#FFFFFF"/>
   
-  <rect x="0" y="0" width="1280" height="80" fill="#1F497D"/>
+  <rect x="0" y="0" width="1280" height="60" fill="#104BA0"/>
   
-  <rect x="0" y="80" width="8" height="640" fill="#4F81BD"/>
+  <rect x="0" y="60" width="8" height="660" fill="#2A5FA9"/>
   
-  <text x="80" y="55" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="24" font-weight="bold">
+  <text x="80" y="42" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="bold">
     {{PAGE_TITLE}}
   </text>
   
-  <rect x="60" y="100" width="1160" height="500" fill="#F8F9FA" rx="4"/>
+  <rect x="60" y="80" width="1160" height="540" fill="#F8F9FA" rx="4"/>
   
-  <text x="640" y="350" fill="#CBD5E1" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" text-anchor="middle">
+  <text x="640" y="350" fill="#CBD5E1" font-family="Microsoft YaHei, sans-serif" font-size="16" text-anchor="middle">
     {{CONTENT_AREA}}
   </text>
   
-  <g transform="translate(60, 620)">
-    <image href="assets/image4.png" x="0" y="0" width="160" height="50" preserveAspectRatio="xMidYMid meet"/>
-    <image href="assets/image5.png" x="200" y="0" width="160" height="50" preserveAspectRatio="xMidYMid meet"/>
+  <g transform="translate(80, 640)">
+    <image href="assets/image4.png" x="0" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/image5.png" x="240" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
   </g>
   
-  <text x="80" y="700" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="12">
+  <text x="80" y="700" fill="#666666" font-family="Microsoft YaHei, sans-serif" font-size="12">
     {{SECTION_NAME}}
   </text>
   
-  <text x="1200" y="700" fill="#666666" font-family="Arial, sans-serif" font-size="12" text-anchor="end">
+  <text x="1200" y="700" fill="#666666" font-family="Times New Roman, serif" font-size="12" text-anchor="end">
     {{PAGE_NUM}}
   </text>
 </svg>

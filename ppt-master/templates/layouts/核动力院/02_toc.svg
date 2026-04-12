@@ -1,59 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
   <rect width="1280" height="720" fill="#FFFFFF"/>
   
-  <rect x="0" y="0" width="1280" height="80" fill="#1F497D"/>
+  <rect x="0" y="100" width="1280" height="520" fill="#004999"/>
   
-  <rect x="0" y="80" width="8" height="640" fill="#4F81BD"/>
+  <polygon points="556,0 556,720 1000,720" fill="#C4C7CB" opacity="0.9"/>
   
-  <text x="80" y="55" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="28" font-weight="bold">
+  <rect x="0" y="100" width="96" height="520" fill="#C4C7CB" opacity="0.9"/>
+  
+  <text x="650" y="130" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="bold">
     目录
   </text>
   
-  <text x="1200" y="55" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" text-anchor="end" opacity="0.8">
+  <text x="1200" y="130" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="14" text-anchor="end" opacity="0.8">
     CONTENTS
   </text>
   
-  <g transform="translate(100, 140)">
-    <rect x="0" y="0" width="60" height="60" fill="#1F497D" rx="4"/>
-    <text x="30" y="42" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">01</text>
-    <text x="80" y="30" fill="#1F497D" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
-    <text x="80" y="55" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="14">{{TOC_ITEM_1_DESC}}</text>
+  <g transform="translate(200, 200)">
+    <rect x="0" y="0" width="60" height="50" fill="#004999" rx="4"/>
+    <rect x="60" y="0" width="400" height="50" fill="#FFFFFF" rx="4"/>
+    <text x="30" y="35" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="24" font-weight="bold" text-anchor="middle">01</text>
+    <text x="80" y="33" fill="#004999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
   </g>
   
-  <g transform="translate(100, 230)">
-    <rect x="0" y="0" width="60" height="60" fill="#4F81BD" rx="4"/>
-    <text x="30" y="42" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">02</text>
-    <text x="80" y="30" fill="#1F497D" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
-    <text x="80" y="55" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="14">{{TOC_ITEM_2_DESC}}</text>
+  <g transform="translate(200, 280)">
+    <rect x="0" y="0" width="60" height="50" fill="#004999" rx="4"/>
+    <rect x="60" y="0" width="400" height="50" fill="#FFFFFF" rx="4"/>
+    <text x="30" y="35" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="24" font-weight="bold" text-anchor="middle">02</text>
+    <text x="80" y="33" fill="#004999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
   </g>
   
-  <g transform="translate(100, 320)">
-    <rect x="0" y="0" width="60" height="60" fill="#1F497D" rx="4"/>
-    <text x="30" y="42" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">03</text>
-    <text x="80" y="30" fill="#1F497D" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold">{{TOC_ITEM_3_TITLE}}</text>
-    <text x="80" y="55" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="14">{{TOC_ITEM_3_DESC}}</text>
+  <g transform="translate(200, 360)">
+    <rect x="0" y="0" width="60" height="50" fill="#004999" rx="4"/>
+    <rect x="60" y="0" width="400" height="50" fill="#FFFFFF" rx="4"/>
+    <text x="30" y="35" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="24" font-weight="bold" text-anchor="middle">03</text>
+    <text x="80" y="33" fill="#004999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">{{TOC_ITEM_3_TITLE}}</text>
   </g>
   
-  <g transform="translate(100, 410)">
-    <rect x="0" y="0" width="60" height="60" fill="#4F81BD" rx="4"/>
-    <text x="30" y="42" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">04</text>
-    <text x="80" y="30" fill="#1F497D" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold">{{TOC_ITEM_4_TITLE}}</text>
-    <text x="80" y="55" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="14">{{TOC_ITEM_4_DESC}}</text>
+  <g transform="translate(200, 440)">
+    <rect x="0" y="0" width="60" height="50" fill="#004999" rx="4"/>
+    <rect x="60" y="0" width="400" height="50" fill="#FFFFFF" rx="4"/>
+    <text x="30" y="35" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="24" font-weight="bold" text-anchor="middle">04</text>
+    <text x="80" y="33" fill="#004999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">{{TOC_ITEM_4_TITLE}}</text>
   </g>
   
-  <g transform="translate(100, 500)">
-    <rect x="0" y="0" width="60" height="60" fill="#1F497D" rx="4"/>
-    <text x="30" y="42" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">05</text>
-    <text x="80" y="30" fill="#1F497D" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="22" font-weight="bold">{{TOC_ITEM_5_TITLE}}</text>
-    <text x="80" y="55" fill="#666666" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="14">{{TOC_ITEM_5_DESC}}</text>
+  <g transform="translate(200, 520)">
+    <rect x="0" y="0" width="60" height="50" fill="#004999" rx="4"/>
+    <rect x="60" y="0" width="400" height="50" fill="#FFFFFF" rx="4"/>
+    <text x="30" y="35" fill="#FFFFFF" font-family="Times New Roman, serif" font-size="24" font-weight="bold" text-anchor="middle">05</text>
+    <text x="80" y="33" fill="#004999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">{{TOC_ITEM_5_TITLE}}</text>
   </g>
   
-  <g transform="translate(60, 600)">
-    <image href="assets/image4.png" x="0" y="0" width="200" height="60" preserveAspectRatio="xMidYMid meet"/>
-    <image href="assets/image5.png" x="240" y="0" width="200" height="60" preserveAspectRatio="xMidYMid meet"/>
+  <g transform="translate(80, 640)">
+    <image href="assets/image4.png" x="0" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/image5.png" x="240" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
   </g>
-  
-  <text x="1200" y="700" fill="#666666" font-family="Arial, sans-serif" font-size="12" text-anchor="end">
-    {{PAGE_NUM}}
-  </text>
 </svg>

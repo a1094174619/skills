@@ -7,28 +7,26 @@
   
   <image href="assets/image3.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
   
-  <rect x="0" y="0" width="1280" height="720" fill="#1F497D" opacity="0.3"/>
+  <rect x="0" y="180" width="1280" height="280" fill="#004999"/>
   
-  <rect x="60" y="80" width="6" height="200" fill="#FFFFFF"/>
-  
-  <text x="85" y="140" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="42" font-weight="bold">
+  <text x="640" y="280" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="42" font-weight="bold" text-anchor="middle">
     {{TITLE}}
   </text>
   
-  <text x="85" y="190" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="20" opacity="0.9">
-    {{SUBTITLE}}
-  </text>
-  
-  <text x="85" y="250" fill="#FFFFFF" font-family="Microsoft YaHei, SimHei, sans-serif" font-size="16" opacity="0.8">
-    {{DATE}} | {{AUTHOR}}
-  </text>
-  
-  <g transform="translate(60, 580)">
-    <image href="assets/image4.png" x="0" y="0" width="280" height="80" preserveAspectRatio="xMidYMid meet"/>
-    <image href="assets/image5.png" x="320" y="0" width="280" height="80" preserveAspectRatio="xMidYMid meet"/>
-  </g>
-  
-  <text x="1200" y="700" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" text-anchor="end" opacity="0.6">
+  <text x="35" y="32" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="16">
     {{CLASSIFICATION}}
   </text>
+  
+  <text x="640" y="580" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="20" text-anchor="middle">
+    {{DATE}}
+  </text>
+  
+  <text x="640" y="520" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="18" text-anchor="middle">
+    {{AUTHOR}}
+  </text>
+  
+  <g transform="translate(80, 640)">
+    <image href="assets/image4.png" x="0" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/image5.png" x="240" y="0" width="180" height="55" preserveAspectRatio="xMidYMid meet"/>
+  </g>
 </svg>

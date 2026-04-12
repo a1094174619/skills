@@ -24,14 +24,6 @@ It aggregates:
 - `flatten_tspan.py`
 - `svg_rect_to_path.py`
 
-Typical usage:
-
-```bash
-python3 scripts/finalize_svg.py <project_path>
-```
-
-Use standalone sub-tools only when you need advanced debugging or one-off fixes.
-
 ## `svg_to_pptx.py`
 
 Convert project SVGs into PPTX.
@@ -143,7 +135,7 @@ python3 scripts/svg_finalize/embed_icons.py svg_output/*.svg
 python3 scripts/svg_finalize/embed_icons.py --dry-run svg_output/*.svg
 ```
 
-Use for manual icon embedding checks outside `finalize_svg.py`.
+Replaces `<use data-icon="chunk/name" .../>`, `<use data-icon="tabler-filled/name" .../>` and `<use data-icon="tabler-outline/name" .../>` placeholders with actual SVG path elements. Use for manual icon embedding checks outside `finalize_svg.py`.
 
 ## PPT Compatibility Rules
 

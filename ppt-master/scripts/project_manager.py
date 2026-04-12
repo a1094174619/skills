@@ -44,6 +44,7 @@ REPO_ROOT = SKILL_DIR.parent.parent
 SOURCE_DIRNAME = "sources"
 TEXT_SOURCE_SUFFIXES = {".md", ".markdown", ".txt"}
 PDF_SUFFIXES = {".pdf"}
+PRESENTATION_SUFFIXES = {".pptx", ".pptm", ".ppsx", ".ppsm", ".potx", ".potm"}
 DOC_SUFFIXES = {
     ".docx", ".doc", ".odt", ".rtf",          # Office documents
     ".epub",                                    # eBooks
@@ -222,7 +223,7 @@ class ProjectManager:
         self._run_tool(
             [
                 sys.executable,
-                str(TOOLS_DIR / "pdf_to_md.py"),
+                str(TOOLS_DIR / "source_to_md" / "pdf_to_md.py"),
                 str(pdf_path),
                 "-o",
                 str(markdown_path),
@@ -233,8 +234,19 @@ class ProjectManager:
         self._run_tool(
             [
                 sys.executable,
-                str(TOOLS_DIR / "doc_to_md.py"),
+                str(TOOLS_DIR / "source_to_md" / "doc_to_md.py"),
                 str(doc_path),
+                "-o",
+                str(markdown_path),
+            ]
+        )
+
+    def _import_presentation(self, presentation_path: Path, markdown_path: Path) -> None:
+        self._run_tool(
+            [
+                sys.executable,
+                str(TOOLS_DIR / "source_to_md" / "ppt_to_md.py"),
+                str(presentation_path),
                 "-o",
                 str(markdown_path),
             ]
@@ -243,11 +255,11 @@ class ProjectManager:
     def _import_url(self, url: str, markdown_path: Path) -> None:
         host = urlparse(url).netloc.lower()
         if any(keyword in host for keyword in WECHAT_HOST_KEYWORDS):
-            command = ["node", str(TOOLS_DIR / "web_to_md.cjs"), url, "-o", str(markdown_path)]
+            command = ["node", str(TOOLS_DIR / "source_to_md" / "web_to_md.cjs"), url, "-o", str(markdown_path)]
         else:
             command = [
                 sys.executable,
-                str(TOOLS_DIR / "web_to_md.py"),
+                str(TOOLS_DIR / "source_to_md" / "web_to_md.py"),
                 url,
                 "-o",
                 str(markdown_path),
@@ -453,6 +465,25 @@ class ProjectManager:
                     summary["markdown"].append(str(markdown_path))
                 except Exception as exc:  # pragma: no cover - summary path
                     summary["skipped"].append(f"{item}: PDF conversion failed ({exc})")
+            elif suffix in PRESENTATION_SUFFIXES:
+                canonical_markdown_path = sources_dir / f"{archived_path.stem}.md"
+                if archived_path.stem in explicit_markdown_stems:
+                    summary["notes"].append(
+                        f"{item}: skipped presentation auto-conversion because a same-stem Markdown source was provided"
+                    )
+                    continue
+                if canonical_markdown_path.exists():
+                    summary["markdown"].append(str(canonical_markdown_path))
+                    summary["notes"].append(
+                        f"{item}: skipped presentation auto-conversion because {canonical_markdown_path.name} already exists"
+                    )
+                    continue
+                markdown_path = canonical_markdown_path
+                try:
+                    self._import_presentation(archived_path, markdown_path)
+                    summary["markdown"].append(str(markdown_path))
+                except Exception as exc:  # pragma: no cover - summary path
+                    summary["skipped"].append(f"{item}: presentation conversion failed ({exc})")
             elif suffix in DOC_SUFFIXES:
                 canonical_markdown_path = sources_dir / f"{archived_path.stem}.md"
                 if archived_path.stem in explicit_markdown_stems:

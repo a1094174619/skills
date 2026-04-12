@@ -5,12 +5,7 @@ description: >
   (PDF/DOCX/URL/Markdown) into high-quality SVG pages and exports to PPTX through
   multi-role collaboration. Use when user asks to "create PPT", "make presentation",
   "生成PPT", "做PPT", "制作演示文稿", or mentions "ppt-master".
-metadata:
-  requires:
-    bins: ["python"]
 ---
-
-
 
 # PPT Master Skill
 
@@ -49,10 +44,11 @@ metadata:
 
 | Script | Purpose |
 |--------|---------|
-| `${SKILL_DIR}/scripts/pdf_to_md.py` | PDF to Markdown |
-| `${SKILL_DIR}/scripts/doc_to_md.py` | Documents to Markdown via Pandoc (DOCX, EPUB, HTML, LaTeX, RST, etc.) |
-| `${SKILL_DIR}/scripts/web_to_md.py` | Web page to Markdown |
-| `${SKILL_DIR}/scripts/web_to_md.cjs` | WeChat / high-security sites to Markdown |
+| `${SKILL_DIR}/scripts/source_to_md/pdf_to_md.py` | PDF to Markdown |
+| `${SKILL_DIR}/scripts/source_to_md/doc_to_md.py` | Documents to Markdown via Pandoc (DOCX, EPUB, HTML, LaTeX, RST, etc.) |
+| `${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py` | PowerPoint to Markdown |
+| `${SKILL_DIR}/scripts/source_to_md/web_to_md.py` | Web page to Markdown |
+| `${SKILL_DIR}/scripts/source_to_md/web_to_md.cjs` | WeChat / high-security sites to Markdown |
 | `${SKILL_DIR}/scripts/project_manager.py` | Project init / validate / manage |
 | `${SKILL_DIR}/scripts/analyze_images.py` | Image analysis |
 | `${SKILL_DIR}/scripts/image_gen.py` | AI image generation (multi-provider) |
@@ -68,8 +64,8 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | Index | Path | Purpose |
 |-------|------|---------|
 | Layout templates | `${SKILL_DIR}/templates/layouts/layouts_index.json` | Query available page layout templates |
-| Chart templates | `${SKILL_DIR}/templates/charts/charts_index.json` | Query available chart SVG templates |
-| Icon library | `${SKILL_DIR}/templates/icons/icons_index.json` | Query available icon names and categories |
+| Visualization templates | `${SKILL_DIR}/templates/charts/charts_index.json` | Query available visualization SVG templates (charts, infographics, diagrams, frameworks) |
+| Icon library | `${SKILL_DIR}/templates/icons/` | Search icons on demand: `ls templates/icons/<library>/ \| grep <keyword>` (libraries: `chunk/`, `tabler-filled/`, `tabler-outline/`) |
 
 ## Standalone Workflows
 
@@ -89,11 +85,12 @@ When the user provides non-Markdown content, convert immediately:
 
 | User Provides | Command |
 |---------------|---------|
-| PDF file | `python3 ${SKILL_DIR}/scripts/pdf_to_md.py <file>` |
-| DOCX / Word / Office document | `python3 ${SKILL_DIR}/scripts/doc_to_md.py <file>` |
-| EPUB / HTML / LaTeX / RST / other | `python3 ${SKILL_DIR}/scripts/doc_to_md.py <file>` |
-| Web link | `python3 ${SKILL_DIR}/scripts/web_to_md.py <URL>` |
-| WeChat / high-security site | `node ${SKILL_DIR}/scripts/web_to_md.cjs <URL>` |
+| PDF file | `python3 ${SKILL_DIR}/scripts/source_to_md/pdf_to_md.py <file>` |
+| DOCX / Word / Office document | `python3 ${SKILL_DIR}/scripts/source_to_md/doc_to_md.py <file>` |
+| PPTX / PowerPoint deck | `python3 ${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py <file>` |
+| EPUB / HTML / LaTeX / RST / other | `python3 ${SKILL_DIR}/scripts/source_to_md/doc_to_md.py <file>` |
+| Web link | `python3 ${SKILL_DIR}/scripts/source_to_md/web_to_md.py <URL>` |
+| WeChat / high-security site | `node ${SKILL_DIR}/scripts/source_to_md/web_to_md.cjs <URL>` |
 | Markdown | Read directly |
 
 **✅ Checkpoint — Confirm source content is ready, proceed to Step 2.**
@@ -169,7 +166,9 @@ First, read the role definition:
 Read references/strategist.md
 ```
 
-**Must complete the Eight Confirmations** (refer to `templates/design_spec_reference.md` for the template structure):
+> ⚠️ **Mandatory gate in `strategist.md`**: Before writing `design_spec.md`, Strategist MUST `read_file templates/design_spec_reference.md` and produce the spec following its full I–XI section structure. See `strategist.md` Section 1 for the explicit gate rule.
+
+**Must complete the Eight Confirmations** (full template structure in `templates/design_spec_reference.md`):
 
 ⛔ **BLOCKING**: The Eight Confirmations MUST be presented to the user as a bundled set of recommendations, and you MUST **wait for the user to confirm or modify** before outputting the Design Specification & Content Outline. This is one of only two core confirmation points in the workflow (the other is template selection). Once confirmed, all subsequent script execution and slide generation should proceed fully automatically.
 
