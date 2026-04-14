@@ -179,7 +179,7 @@ def infer_author(modified_dir: Path, original_docx: Path, default: str = "Claude
 
     original_authors = _get_authors_from_docx(original_docx)
 
-    new_changes: dict[str, int] = {}
+    new_changes: Dict[str, int] = {}
     for author, count in modified_authors.items():
         original_count = original_authors.get(author, 0)
         diff = count - original_count
