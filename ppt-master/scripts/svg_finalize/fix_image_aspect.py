@@ -23,6 +23,8 @@ Examples:
     python3 scripts/svg_finalize/fix_image_aspect.py projects/demo/svg_output/slide_06_current_overview.svg
 """
 
+from __future__ import annotations
+
 import os
 import re
 import sys

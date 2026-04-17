@@ -27,6 +27,8 @@ Common Commands (can be copied and used directly)
 ======================================================================
 """
 
+from __future__ import annotations
+
 import sys
 import re
 import math

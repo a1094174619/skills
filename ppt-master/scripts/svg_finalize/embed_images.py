@@ -12,6 +12,8 @@ Examples:
     python3 scripts/svg_finalize/embed_images.py examples/ppt169_demo/svg_output/*.svg
 """
 
+from __future__ import annotations
+
 import os
 import base64
 import re

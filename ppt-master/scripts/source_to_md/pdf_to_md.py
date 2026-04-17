@@ -5,6 +5,8 @@ Uses PyMuPDF to extract PDF text content and convert to Markdown format.
 Supports heading levels, bold, italic, and list detection.
 """
 
+from __future__ import annotations
+
 import fitz  # PyMuPDF
 import argparse
 import hashlib

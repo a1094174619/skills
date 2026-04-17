@@ -11,6 +11,8 @@ Usage:
     python3 scripts/batch_validate.py examples projects
 """
 
+from __future__ import annotations
+
 import sys
 from collections import defaultdict
 from pathlib import Path

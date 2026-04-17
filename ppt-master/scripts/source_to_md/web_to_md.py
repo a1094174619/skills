@@ -19,6 +19,8 @@ Note:
     modify this script to use 'curl_cffi'.
 """
 
+from __future__ import annotations
+
 import argparse
 import datetime
 import io

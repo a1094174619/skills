@@ -8,6 +8,8 @@ Configuration keys:
   REPLICATE_MODEL                           (optional)
 """
 
+from __future__ import annotations
+
 import os
 import time
 

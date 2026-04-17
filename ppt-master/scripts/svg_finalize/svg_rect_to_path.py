@@ -19,6 +19,8 @@ Output:
     - File mode: outputs to <filename>_rounded.svg
 """
 
+from __future__ import annotations
+
 import sys
 import re
 import argparse

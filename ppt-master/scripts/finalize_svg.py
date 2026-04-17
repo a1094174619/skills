@@ -26,6 +26,8 @@ Processing options:
     fix-rounded   - Convert <rect rx="..."/> to <path> (for PPT shape conversion)
 """
 
+from __future__ import annotations
+
 import os
 import sys
 import shutil

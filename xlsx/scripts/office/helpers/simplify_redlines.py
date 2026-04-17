@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """Simplify tracked changes by merging adjacent w:ins or w:del elements.
 
 Merges adjacent <w:ins> elements from the same author into a single element.

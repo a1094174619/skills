@@ -22,6 +22,8 @@ Notes:
     - Output file defaults to adding an _unwatermarked suffix
 """
 
+from __future__ import annotations
+
 import sys
 import argparse
 from pathlib import Path

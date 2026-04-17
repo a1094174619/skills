@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """Remove unreferenced files from an unpacked PPTX directory.
 
 Usage: python clean.py <unpacked_dir>

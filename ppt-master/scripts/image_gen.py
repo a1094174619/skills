@@ -35,6 +35,8 @@ Usage:
   python3 image_gen.py --list-backends
 """
 
+from __future__ import annotations
+
 import os
 import sys
 import argparse

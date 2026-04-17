@@ -11,6 +11,8 @@ Dependency: pandoc must be installed
    Windows: https://pandoc.org/installing.html
 """
 
+from __future__ import annotations
+
 import argparse
 import re
 import shutil
