@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="chapterBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002E5D" />
+      <stop offset="100%" stop-color="#005BB7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#chapterBgGrad)" />
+
+  <image href="bg_worldmap.png" x="0" y="0" width="1280" height="720" opacity="0.1" />
+
+  <path d="M0,580 Q320,520 640,570 T1280,550 L1280,720 L0,720 Z" fill="#001A3D" opacity="0.45" />
+  <path d="M0,620 Q320,570 640,615 T1280,600 L1280,720 L0,720 Z" fill="#003D82" opacity="0.35" />
+  <path d="M0,660 Q320,620 640,658 T1280,648 L1280,720 L0,720 Z" fill="#4CA1E7" opacity="0.2" />
+
+  <g transform="translate(640, 340)">
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.08" />
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#4CA1E7" stroke-width="1" stroke-opacity="0.12" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.06" />
+  </g>
+
+  <line x1="200" y1="340" x2="420" y2="340" stroke="#4CA1E7" stroke-width="2" stroke-opacity="0.35" />
+  <line x1="860" y1="340" x2="1080" y2="340" stroke="#4CA1E7" stroke-width="2" stroke-opacity="0.35" />
+
+  <text x="640" y="300" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="120" font-weight="bold" fill="#4CA1E7" fill-opacity="0.25" text-anchor="middle">{{CHAPTER_NUM}}</text>
+
+  <text x="640" y="380" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{CHAPTER_TITLE}}</text>
+
+  <rect x="560" y="410" width="160" height="3" fill="#4CA1E7" opacity="0.6" rx="1.5" />
+
+  <image href="logo_cnnc.jpeg" x="1140" y="28" width="90" height="34" />
+
+  <text x="1140" y="685" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.4" text-anchor="end"> Nuclear Power Institute Of China</text>
+
+</svg>

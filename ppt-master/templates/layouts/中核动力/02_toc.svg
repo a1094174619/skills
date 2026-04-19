@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="tocSidebarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002E5D" />
+      <stop offset="100%" stop-color="#004A99" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#FFFFFF" />
+
+  <image href="bg_worldmap.png" x="380" y="0" width="900" height="720" opacity="0.06" />
+
+  <rect x="0" y="0" width="420" height="720" fill="url(#tocSidebarGrad)" />
+
+  <image href="bg_worldmap.png" x="0" y="0" width="420" height="720" opacity="0.08" />
+
+  <rect x="50" y="260" width="4" height="80" fill="#4CA1E7" rx="2" />
+
+  <text x="74" y="310" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="56" font-weight="bold" fill="#FFFFFF">目录</text>
+  <text x="74" y="355" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#B8D4E8">CONTENTS</text>
+
+  <line x1="50" y1="400" x2="370" y2="400" stroke="#4CA1E7" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <g transform="translate(480, 160)">
+    <rect x="-15" y="-10" width="750" height="85" fill="#F5F7FA" rx="8" opacity="0.6" />
+
+    <circle cx="12" cy="32" r="22" fill="#005BB7" opacity="0.12" />
+    <text x="12" y="39" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#005BB7" text-anchor="middle">一</text>
+
+    <text x="55" y="30" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" font-weight="bold" fill="#333333">{{TOC_ITEM_1_TITLE}}</text>
+
+    <line x1="55" y1="48" x2="680" y2="48" stroke="#B8D4E8" stroke-width="1" stroke-dasharray="4,3" opacity="0.6" />
+  </g>
+
+  <g transform="translate(480, 280)">
+    <rect x="-15" y="-10" width="750" height="85" fill="#F5F7FA" rx="8" opacity="0.6" />
+
+    <circle cx="12" cy="32" r="22" fill="#005BB7" opacity="0.12" />
+    <text x="12" y="39" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#005BB7" text-anchor="middle">二</text>
+
+    <text x="55" y="30" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" font-weight="bold" fill="#333333">{{TOC_ITEM_2_TITLE}}</text>
+
+    <line x1="55" y1="48" x2="680" y2="48" stroke="#B8D4E8" stroke-width="1" stroke-dasharray="4,3" opacity="0.6" />
+  </g>
+
+  <g transform="translate(480, 400)">
+    <rect x="-15" y="-10" width="750" height="85" fill="#F5F7FA" rx="8" opacity="0.6" />
+
+    <circle cx="12" cy="32" r="22" fill="#005BB7" opacity="0.08" />
+    <text x="12" y="39" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#666666" text-anchor="middle">三</text>
+
+    <text x="55" y="30" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" font-weight="bold" fill="#999999">{{TOC_ITEM_3_TITLE}}</text>
+  </g>
+
+  <g transform="translate(480, 520)">
+    <rect x="-15" y="-10" width="750" height="85" fill="#F5F7FA" rx="8" opacity="0.6" />
+
+    <circle cx="12" cy="32" r="22" fill="#005BB7" opacity="0.08" />
+    <text x="12" y="39" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#666666" text-anchor="middle">四</text>
+
+    <text x="55" y="30" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="26" font-weight="bold" fill="#999999">{{TOC_ITEM_4_TITLE}}</text>
+  </g>
+
+  <image href="logo_cnnc.jpeg" x="1160" y="28" width="90" height="34" />
+
+  <text x="1220" y="692" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#999999" text-anchor="end">— {{PAGE_NUM}} —</text>
+
+</svg>

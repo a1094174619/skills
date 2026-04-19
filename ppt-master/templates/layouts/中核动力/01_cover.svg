@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="coverBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002E5D" />
+      <stop offset="100%" stop-color="#005BB7" />
+    </linearGradient>
+    <linearGradient id="coverAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CA1E7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4CA1E7" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#FFFFFF" />
+
+  <image href="bg_worldmap.png" x="0" y="0" width="1280" height="720" opacity="0.15" />
+
+  <rect width="1280" height="720" fill="url(#coverBgGrad)" opacity="0.88" />
+
+  <rect x="0" y="520" width="1280" height="200" fill="#001A3D" opacity="0.6" />
+
+  <path d="M0,560 Q320,500 640,550 T1280,540 L1280,720 L0,720 Z" fill="#003D82" opacity="0.5" />
+  <path d="M0,600 Q320,560 640,600 T1280,590 L1280,720 L0,720 Z" fill="#005BB7" opacity="0.35" />
+  <path d="M0,640 Q320,610 640,645 T1280,638 L1280,720 L0,720 Z" fill="#4CA1E7" opacity="0.25" />
+
+  <rect x="50" y="240" width="5" height="80" fill="#4CA1E7" rx="2" />
+
+  <text x="70" y="290" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">{{TITLE}}</text>
+
+  <text x="70" y="340" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#B8D4E8">{{SUBTITLE}}</text>
+
+  <rect x="70" y="380" width="180" height="2" fill="#4CA1E7" opacity="0.6" rx="1" />
+
+  <text x="70" y="430" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#FFFFFF" opacity="0.85">{{AUTHOR}}</text>
+
+  <g transform="translate(820, 160)">
+    <rect x="0" y="0" width="380" height="300" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="10,6" stroke-opacity="0.25" rx="12" />
+    <rect x="15" y="15" width="350" height="270" fill="none" stroke="#4CA1E7" stroke-width="1" stroke-opacity="0.3" rx="10" />
+    <image href="photo_building.png" x="30" y="30" width="320" height="240" preserveAspectRatio="xMidYMid slice" opacity="0.9" />
+  </g>
+
+  <image href="logo_cnnc.jpeg" x="1140" y="28" width="110" height="42" />
+
+  <g transform="translate(1050, 600)">
+    <rect x="0" y="0" width="180" height="36" fill="#FFFFFF" fill-opacity="0.08" rx="4" />
+    <text x="90" y="24" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">{{CLASSIFICATION}}</text>
+  </g>
+
+  <text x="70" y="480" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#B8D4E8">{{DATE}}</text>
+
+  <text x="640" y="692" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.45" text-anchor="middle">中国核动力研究设计院 · Nuclear Power Institute Of China</text>
+
+</svg>

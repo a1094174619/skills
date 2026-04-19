@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="endingBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002E5D" />
+      <stop offset="100%" stop-color="#005BB7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#endingBgGrad)" />
+
+  <image href="bg_worldmap.png" x="0" y="0" width="1280" height="720" opacity="0.08" />
+
+  <path d="M0,540 Q320,480 640,530 T1280,510 L1280,720 L0,720 Z" fill="#001A3D" opacity="0.5" />
+  <path d="M0,585 Q320,535 640,578 T1280,562 L1280,720 L0,720 Z" fill="#003D82" opacity="0.38" />
+  <path d="M0,630 Q320,588 640,625 T1280,612 L1280,720 L0,720 Z" fill="#4CA1E7" opacity="0.22" />
+
+  <g transform="translate(640, 280)">
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.07" />
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#4CA1E7" stroke-width="0.8" stroke-opacity="0.1" />
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.05" />
+  </g>
+
+  <line x1="360" y1="340" x2="500" y2="340" stroke="#4CA1E7" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="780" y1="340" x2="920" y2="340" stroke="#4CA1E7" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <text x="640" y="330" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="42" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{THANK_YOU_MSG}}</text>
+
+  <rect x="560" y="358" width="160" height="2.5" fill="#4CA1E7" opacity="0.5" rx="1.2" />
+
+  <text x="640" y="410" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#B8D4E8" text-anchor="middle">{{INSTITUTE_NAME}}</text>
+
+  <g transform="translate(570, 470)">
+    <image href="logo_cnnc_full.png" x="0" y="0" width="140" height="54" opacity="0.95" />
+  </g>
+
+  <text x="640" y="565" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" fill="#FFFFFF" fill-opacity="0.45" text-anchor="middle">敬请各位领导批评指正</text>
+
+  <text x="640" y="600" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.35" text-anchor="middle">Nuclear Power Institute Of China · 中国核动力研究设计院</text>
+
+  <text x="1140" y="685" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12" fill="#FFFFFF" fill-opacity="0.3" text-anchor="end">{{DATE}}</text>
+
+</svg>
