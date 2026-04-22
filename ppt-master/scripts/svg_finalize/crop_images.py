@@ -290,7 +290,7 @@ def process_svg_images(
     
     # Save modified SVG
     if modified and not dry_run:
-        tree.write(str(svg_path), encoding='unicode', xml_declaration=False)
+        tree.write(str(svg_path), encoding='utf-8', xml_declaration=False)
     
     return (processed_count, error_count)
 

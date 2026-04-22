@@ -1,0 +1,84 @@
+# Template Import Analysis - [非密]超临界二氧化碳产业公司推进情况汇报.pptx
+
+## Summary
+- Slide size: 960 x 540 px
+- Theme colors: accent1, accent2, accent3, accent4, accent5, accent6, dk1, dk2, folHlink, hlink, lt1, lt2
+- Theme fonts: majorLatin=Calibri, minorLatin=Calibri
+- Common assets: 4
+
+## Slide Candidates
+- Slide 1: content_candidate
+  - Name: slide1.xml
+  - Background: none (n/a)
+  - Images: 4
+  - Text sample: 超临界二氧化碳产业公司推进情况汇报 | 非密 | 2026
+- Slide 2: toc_candidate
+  - Name: slide2.xml
+  - Background: none (n/a)
+  - Images: 2
+  - Text sample: 目录 | 应用前景与推广潜力 | 二
+- Slide 3: chapter_candidate
+  - Name: slide3.xml
+  - Background: none (n/a)
+  - Images: 3
+  - Text sample: 一 | 超碳产业公司推进情况及建议
+- Slide 4: content_candidate
+  - Name: slide4.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 战略定位 | 战略目标 | 落实集团指示，按照二级公司架构，布局超碳技术全产业链。
+- Slide 5: content_candidate
+  - Name: slide5.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 实施路径 | “三步走”实施路径 | 第
+- Slide 6: content_candidate
+  - Name: slide6.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 各级公司组建方案（一） | 中核超碳产业公司（母公司）组建方案 | 公司定位：
+- Slide 7: content_candidate
+  - Name: slide7.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 各级公司组建方案（二） | 超碳研发公司组建方案 | 公司定位：
+- Slide 8: content_candidate
+  - Name: slide8.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 各级公司组建方案（三） | 各领域 | /
+- Slide 9: chapter_candidate
+  - Name: slide9.xml
+  - Background: none (n/a)
+  - Images: 3
+  - Text sample: 二 | 应用前景与推广潜力
+- Slide 10: content_candidate
+  - Name: slide10.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 超碳发电技术在冶金、干熄焦领域的应用 | 钢铁行业 | 烧结工序：目前国内现存有
+- Slide 11: content_candidate
+  - Name: slide11.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 冶金领域市场需求 | 序号 | 意向合作单位
+- Slide 12: content_candidate
+  - Name: slide12.xml
+  - Background: none (n/a)
+  - Images: 0
+  - Text sample: 干熄焦领域市场需求 | 序号 | 意向合作单位
+- Slide 13: content_candidate
+  - Name: slide13.xml
+  - Background: none (n/a)
+  - Images: 1
+  - Text sample: 储能领域 | 基于熔盐储热的 | S-CO
+- Slide 14: content_candidate
+  - Name: slide14.xml
+  - Background: none (n/a)
+  - Images: 3
+  - Text sample: 其他应用领域 | CCPP | 发电领域
+- Slide 15: ending_candidate
+  - Name: slide15.xml
+  - Background: none (n/a)
+  - Images: 4
+  - Text sample: 中国核动力研究设计院 | 汇报完毕

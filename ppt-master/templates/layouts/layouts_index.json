@@ -1,6 +1,6 @@
 {
   "meta": {
-    "total": 21,
+    "total": 20,
     "defaultViewBox": "0 0 1280 720",
     "formats": [
       "ppt169"
@@ -59,8 +59,7 @@
       "layouts": [
         "government_red",
         "government_blue",
-        "ai_ops",
-        "核动力院"
+        "ai_ops"
       ]
     },
     "special": {
@@ -118,15 +117,11 @@
     ],
     "energy": [
       "中国电建_常规",
-      "中国电建_现代",
-      "核动力院"
+      "中国电建_现代"
     ],
     "creative": [
       "pixel_retro",
       "smart_red"
-    ],
-    "nuclear": [
-      "核动力院"
     ]
   },
   "layouts": {
@@ -410,24 +405,6 @@
         "Academic",
         "Defense",
         "University"
-      ]
-    },
-    "核动力院": {
-      "label": "Nuclear Power Institute Template",
-      "summary": "A professional template for nuclear power research institute reports and presentations",
-      "tone": "Authoritative, professional, deep blue government-enterprise style",
-      "themeMode": "Light theme (white background + deep blue #004999 accent + decorative geometric elements)",
-      "assets": [
-        "assets/image3.png",
-        "assets/image4.png",
-        "assets/image5.png",
-        "assets/image14.png"
-      ],
-      "keywords": [
-        "Nuclear power",
-        "Research institute",
-        "Government enterprise",
-        "Deep blue"
       ]
     }
   }

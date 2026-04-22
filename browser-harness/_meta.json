@@ -1,0 +1,21 @@
+{
+  "owner": "browser-use",
+  "slug": "browser-harness",
+  "displayName": "Browser Harness",
+  "latest": {
+    "version": "0.1.0",
+    "publishedAt": 1776867600000,
+    "commit": "https://github.com/browser-use/browser-harness"
+  },
+  "history": [
+    {
+      "version": "0.1.0",
+      "publishedAt": 1776867600000,
+      "commit": "https://github.com/browser-use/browser-harness"
+    }
+  ],
+  "compatibility": {
+    "python": ">=3.8",
+    "platforms": ["Windows", "Linux", "Darwin"]
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "source": {
+    "pptx": "C:\\Users\\admin\\cow\\skills\\ppt-master\\projects\\[非密]超临界二氧化碳产业公司推进情况汇报.pptx",
+    "name": "[非密]超临界二氧化碳产业公司推进情况汇报.pptx"
+  },
+  "slideSize": {
+    "width_emu": 9144000,
+    "height_emu": 5143500,
+    "width_px": 960,
+    "height_px": 540
+  },
+  "theme": {
+    "colors": {
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#1F497D",
+      "lt2": "#EEECE1",
+      "accent1": "#4F81BD",
+      "accent2": "#C0504D",
+      "accent3": "#9BBB59",
+      "accent4": "#8064A2",
+      "accent5": "#4BACC6",
+      "accent6": "#F79646",
+      "hlink": "#0000FF",
+      "folHlink": "#800080"
+    },
+    "fonts": {
+      "majorLatin": "Calibri",
+      "minorLatin": "Calibri"
+    }
+  },
+  "assets": {
+    "exportDir": "assets",
+    "commonAssets": [
+      "image4_2.png",
+      "image5_2.png",
+      "image8_2.jpeg",
+      "image9_2.png"
+    ],
+    "allAssets": [
+      "image10_2.tiff",
+      "image11_2.jpeg",
+      "image12_2.jpeg",
+      "image13_2.png",
+      "image14_2.png",
+      "image1_2.png",
+      "image2_2.png",
+      "image3_2.png",
+      "image4_2.png",
+      "image5_2.png",
+      "image6_2.png",
+      "image7_2.png",
+      "image8_2.jpeg",
+      "image9_2.png"
+    ]
+  },
+  "pageTypeCandidates": {
+    "chapter_candidate": [
+      3,
+      9
+    ],
+    "content_candidate": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "ending_candidate": [
+      15
+    ],
+    "toc_candidate": [
+      2
+    ]
+  },
+  "slides": [
+    {
+      "index": 1,
+      "name": "slide1.xml",
+      "slidePath": "ppt/slides/slide1.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout1.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image3_2.png",
+        "image4_2.png",
+        "image5_2.png",
+        "image6_2.png"
+      ],
+      "textSamples": [
+        "超临界二氧化碳产业公司推进情况汇报",
+        "非密",
+        "2026",
+        "年",
+        "03",
+        "月"
+      ],
+      "textCount": 6,
+      "shapeCount": 10,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 2,
+      "name": "slide2.xml",
+      "slidePath": "ppt/slides/slide2.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout4.xml",
+      "masterPath": "ppt/slideMasters/slideMaster2.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image7_2.png",
+        "image8_2.jpeg"
+      ],
+      "textSamples": [
+        "目录",
+        "应用前景与推广潜力",
+        "二",
+        "产业公司推进情况及建议",
+        "一"
+      ],
+      "textCount": 5,
+      "shapeCount": 10,
+      "pageType": "toc_candidate"
+    },
+    {
+      "index": 3,
+      "name": "slide3.xml",
+      "slidePath": "ppt/slides/slide3.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout18.xml",
+      "masterPath": "ppt/slideMasters/slideMaster4.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image4_2.png",
+        "image5_2.png",
+        "image9_2.png"
+      ],
+      "textSamples": [
+        "一",
+        "超碳产业公司推进情况及建议"
+      ],
+      "textCount": 2,
+      "shapeCount": 10,
+      "pageType": "chapter_candidate"
+    },
+    {
+      "index": 4,
+      "name": "slide4.xml",
+      "slidePath": "ppt/slides/slide4.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "战略定位",
+        "战略目标",
+        "落实集团指示，按照二级公司架构，布局超碳技术全产业链。",
+        "推动产业布局向装备端纵向延伸，同步布局超碳发电系统配套装备研发、制造公司，构建闭环产业链",
+        "超碳产业总体布局",
+        "集团公司"
+      ],
+      "textCount": 6,
+      "shapeCount": 32,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 5,
+      "name": "slide5.xml",
+      "slidePath": "ppt/slides/slide5.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "实施路径",
+        "“三步走”实施路径",
+        "第",
+        "1",
+        "步：",
+        "组建母公司"
+      ],
+      "textCount": 6,
+      "shapeCount": 11,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 6,
+      "name": "slide6.xml",
+      "slidePath": "ppt/slides/slide6.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "各级公司组建方案（一）",
+        "中核超碳产业公司（母公司）组建方案",
+        "公司定位：",
+        "中核集团下属二级公司，全产业链统筹中心",
+        "股权结构设计：",
+        "中核集团：全资控股（现金出资）"
+      ],
+      "textCount": 6,
+      "shapeCount": 5,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 7,
+      "name": "slide7.xml",
+      "slidePath": "ppt/slides/slide7.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "各级公司组建方案（二）",
+        "超碳研发公司组建方案",
+        "公司定位：",
+        "技术创新平台与工程服务中心",
+        "股权结构设计：",
+        "中核超碳产业公司：控股股东（现金出资）"
+      ],
+      "textCount": 6,
+      "shapeCount": 5,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 8,
+      "name": "slide8.xml",
+      "slidePath": "ppt/slides/slide8.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "各级公司组建方案（三）",
+        "各领域",
+        "/",
+        "区域",
+        "项目公司组建方案",
+        "公司定位："
+      ],
+      "textCount": 6,
+      "shapeCount": 6,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 9,
+      "name": "slide9.xml",
+      "slidePath": "ppt/slides/slide9.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout18.xml",
+      "masterPath": "ppt/slideMasters/slideMaster4.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image4_2.png",
+        "image5_2.png",
+        "image9_2.png"
+      ],
+      "textSamples": [
+        "二",
+        "应用前景与推广潜力"
+      ],
+      "textCount": 2,
+      "shapeCount": 10,
+      "pageType": "chapter_candidate"
+    },
+    {
+      "index": 10,
+      "name": "slide10.xml",
+      "slidePath": "ppt/slides/slide10.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "超碳发电技术在冶金、干熄焦领域的应用",
+        "钢铁行业",
+        "烧结工序：目前国内现存有",
+        "350~400",
+        "套",
+        "左右烧结余热发电机组"
+      ],
+      "textCount": 6,
+      "shapeCount": 7,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 11,
+      "name": "slide11.xml",
+      "slidePath": "ppt/slides/slide11.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "冶金领域市场需求",
+        "序号",
+        "意向合作单位",
+        "参数",
+        "1",
+        "内蒙古包钢鑫能源有限公司"
+      ],
+      "textCount": 6,
+      "shapeCount": 7,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 12,
+      "name": "slide12.xml",
+      "slidePath": "ppt/slides/slide12.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [],
+      "textSamples": [
+        "干熄焦领域市场需求",
+        "序号",
+        "意向合作单位",
+        "参数",
+        "1",
+        "首钢集团"
+      ],
+      "textCount": 6,
+      "shapeCount": 6,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 13,
+      "name": "slide13.xml",
+      "slidePath": "ppt/slides/slide13.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image10_2.tiff"
+      ],
+      "textSamples": [
+        "储能领域",
+        "基于熔盐储热的",
+        "S-CO",
+        "2",
+        "发电系统具有",
+        "模块化、效率更高、支持快速启停"
+      ],
+      "textCount": 6,
+      "shapeCount": 12,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 14,
+      "name": "slide14.xml",
+      "slidePath": "ppt/slides/slide14.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout2.xml",
+      "masterPath": "ppt/slideMasters/slideMaster1.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image11_2.jpeg",
+        "image12_2.jpeg",
+        "image13_2.png"
+      ],
+      "textSamples": [
+        "其他应用领域",
+        "CCPP",
+        "发电领域",
+        "以",
+        "S-CO",
+        "2"
+      ],
+      "textCount": 6,
+      "shapeCount": 7,
+      "pageType": "content_candidate"
+    },
+    {
+      "index": 15,
+      "name": "slide15.xml",
+      "slidePath": "ppt/slides/slide15.xml",
+      "layoutPath": "ppt/slideLayouts/slideLayout15.xml",
+      "masterPath": "ppt/slideMasters/slideMaster3.xml",
+      "backgroundAsset": null,
+      "backgroundSource": null,
+      "imageAssets": [
+        "image14_2.png",
+        "image4_2.png",
+        "image5_2.png",
+        "image8_2.jpeg"
+      ],
+      "textSamples": [
+        "中国核动力研究设计院",
+        "汇报完毕"
+      ],
+      "textCount": 2,
+      "shapeCount": 17,
+      "pageType": "ending_candidate"
+    }
+  ]
+}

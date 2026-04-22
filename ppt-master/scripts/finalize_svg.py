@@ -71,7 +71,7 @@ def process_flatten_text(svg_file: Path, verbose: bool = False) -> bool:
         changed = flatten_text_with_tspans(tree)
 
         if changed:
-            tree.write(str(svg_file), encoding='unicode', xml_declaration=False)
+            tree.write(str(svg_file), encoding='utf-8', xml_declaration=False)
             if verbose:
                 safe_print(f"   [OK] {svg_file.name}: text flattened")
         return changed
