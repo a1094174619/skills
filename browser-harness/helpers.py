@@ -61,9 +61,15 @@ def drain_events():
     return _send({"meta": "drain_events"})["events"]
 
 
+def _removeprefix(s, prefix):
+    return s[len(prefix):] if s.startswith(prefix) else s
+
+
 def goto(url):
     r = cdp("Page.navigate", url=url)
-    d = (Path(__file__).parent / "domain-skills" / (urlparse(url).hostname or "").removeprefix("www.").split(".")[0])
+    hostname = urlparse(url).hostname or ""
+    hostname = _removeprefix(hostname, "www.")
+    d = (Path(__file__).parent / "domain-skills" / hostname.split(".")[0])
     return {**r, "domain_skills": sorted(p.name for p in d.rglob("*.md"))[:10]} if d.is_dir() else r
 
 

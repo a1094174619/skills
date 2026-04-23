@@ -4,7 +4,7 @@
 
 Both registries expose full JSON APIs with no auth required. Never use a browser — every data point is available over HTTP.
 
-Tested 2026-04-18 with `uv run python` + `http_get`.
+Tested 2026-04-18 with `python` + `http_get`.
 
 ---
 

@@ -21,7 +21,7 @@ HELP = """Browser Harness
 Read SKILL.md for the default workflow and examples.
 
 Typical usage:
-  uv run bh <<'PY'
+  python run.py <<'PY'
   ensure_real_tab()
   print(page_info())
   PY
@@ -54,7 +54,7 @@ def main():
     if sys.stdin.isatty():
         sys.exit(
             "browser-harness reads Python from stdin. Use:\n"
-            "  browser-harness <<'PY'\n"
+            "  python run.py <<'PY'\n"
             "  print(page_info())\n"
             "  PY"
         )

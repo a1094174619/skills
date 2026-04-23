@@ -2,6 +2,7 @@ import json
 import os
 import platform
 import socket
+import sys
 import tempfile
 import time
 import urllib.request
@@ -76,7 +77,7 @@ def ensure_daemon(wait=60.0, name=None, env=None):
     if IS_WINDOWS:
         creationflags = subprocess.CREATE_NEW_PROCESS_GROUP
         p = subprocess.Popen(
-            ["uv", "run", "daemon.py"],
+            [sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "daemon.py")],
             cwd=os.path.dirname(os.path.abspath(__file__)),
             env=e,
             stdout=subprocess.DEVNULL,
@@ -85,7 +86,7 @@ def ensure_daemon(wait=60.0, name=None, env=None):
         )
     else:
         p = subprocess.Popen(
-            ["uv", "run", "daemon.py"],
+            [sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "daemon.py")],
             cwd=os.path.dirname(os.path.abspath(__file__)),
             env=e,
             stdout=subprocess.DEVNULL,
@@ -530,7 +531,7 @@ def run_update(yes=False):
         if r.returncode != 0:
             return r.returncode
     elif mode == "pypi":
-        tool_upgrade = subprocess.run(["uv", "tool", "upgrade", "browser-harness"])
+        tool_upgrade = subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "browser-harness"])
         if tool_upgrade.returncode != 0:
             pip = subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "browser-harness"])
             if pip.returncode != 0:
