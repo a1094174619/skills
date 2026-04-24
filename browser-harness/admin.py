@@ -1,12 +1,18 @@
+import hashlib
 import json
 import os
 import platform
 import socket
+import ssl
 import sys
 import tempfile
 import time
 import urllib.request
 from pathlib import Path
+
+
+def _stable_hash(s):
+    return int(hashlib.md5(s.encode()).hexdigest()[:8], 16)
 
 
 def _load_env():
@@ -36,7 +42,7 @@ def _paths(name):
     n = name or NAME
     if IS_WINDOWS:
         sock_host = "127.0.0.1"
-        sock_port = 9223 + hash(n) % 10000
+        sock_port = 9223 + _stable_hash(n) % 10000
         return (sock_host, sock_port), os.path.join(TEMP_DIR, f"bu-{n}.pid")
     return f"/tmp/bu-{n}.sock", f"/tmp/bu-{n}.pid"
 
@@ -165,17 +171,21 @@ def _browser_use(path, method, body=None):
     key = os.environ.get("BROWSER_USE_API_KEY")
     if not key:
         raise RuntimeError("BROWSER_USE_API_KEY missing -- see .env.example")
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.minimum_version = ssl.TLSVersion.TLSv1_2
     req = urllib.request.Request(
         f"{BU_API}{path}",
         method=method,
         data=(json.dumps(body).encode() if body is not None else None),
         headers={"X-Browser-Use-API-Key": key, "Content-Type": "application/json"},
     )
-    return json.loads(urllib.request.urlopen(req, timeout=60).read() or b"{}")
+    return json.loads(urllib.request.urlopen(req, timeout=60, context=ctx).read() or b"{}")
 
 
 def _cdp_ws_from_url(cdp_url):
-    return json.loads(urllib.request.urlopen(f"{cdp_url}/json/version", timeout=15).read())["webSocketDebuggerUrl"]
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.minimum_version = ssl.TLSVersion.TLSv1_2
+    return json.loads(urllib.request.urlopen(f"{cdp_url}/json/version", timeout=15, context=ctx).read())["webSocketDebuggerUrl"]
 
 
 def _has_local_gui():
@@ -332,8 +342,10 @@ def _latest_release_tag(force=False):
     if not force and cache.get("tag") and now - cache.get("fetched_at", 0) < VERSION_CACHE_TTL:
         return cache["tag"]
     try:
+        ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+        ctx.minimum_version = ssl.TLSVersion.TLSv1_2
         req = urllib.request.Request(GH_RELEASES, headers={"Accept": "application/vnd.github+json"})
-        tag = json.loads(urllib.request.urlopen(req, timeout=5).read()).get("tag_name") or ""
+        tag = json.loads(urllib.request.urlopen(req, timeout=5, context=ctx).read()).get("tag_name") or ""
     except Exception:
         return cache.get("tag")
     tag = tag.lstrip("v")
